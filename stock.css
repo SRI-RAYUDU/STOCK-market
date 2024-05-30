@@ -1,0 +1,45 @@
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+}
+.transition {
+  display: inline-block;
+  transition: transform 0.5s ease-in-out;
+  position: relative;
+  z-index: 1;
+  animation: moveAndRotate 4s forwards;
+  animation-iteration-count: infinite;
+  animation-duration: 8s;
+  animation-delay: 5s;
+}
+@keyframes moveAndRotate {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(900px) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+a {
+  height: 50px;
+}
+marquee {
+  gap: 10px;
+  margin-top: -130px;
+}
+.img {
+  height: 38em;
+}
+.btn {
+  padding: 5px;
+  height: 35px;
+  width: 50px;
+}
